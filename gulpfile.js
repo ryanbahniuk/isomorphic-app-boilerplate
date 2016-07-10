@@ -14,11 +14,15 @@ const jsPath = path.join(assetsPath, 'javascripts');
 
 gulp.task('build-css', () => {
   const milligramSrcPath = path.join('.', 'node_modules', 'milligram', 'dist', 'milligram.min.css');
+  const milligramMapSrcPath = path.join('.', 'node_modules', 'milligram', 'dist', 'milligram.min.css.map');
   const normalizeSrcPath = path.join('.', 'node_modules', 'normalize.css', 'normalize.css');
 
   del(path.join(cssPath, '*'));
 
   gulp.src(milligramSrcPath)
+    .pipe(gulp.dest(cssPath));
+
+  gulp.src(milligramMapSrcPath)
     .pipe(gulp.dest(cssPath));
 
   gulp.src(normalizeSrcPath)
