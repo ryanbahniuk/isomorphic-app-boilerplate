@@ -14,12 +14,12 @@ const app = express();
 
 const engine = ReactEngine.server.create({
   routes: routes,
-  routesFilePath: join(__dirname, 'router.jsx')
+  routesFilePath: join(__dirname, 'router.js')
 });
 
-app.engine('.jsx', engine);
+app.engine('.js', engine);
 app.set('views', join(__dirname, 'components'));
-app.set('view engine', 'jsx');
+app.set('view engine', 'js');
 app.set('view', ReactEngine.expressView);
 
 app.use('/', indexController);
