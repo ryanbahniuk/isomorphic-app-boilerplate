@@ -2,3 +2,4 @@ npm-debug.log
 node_modules/
 public/stylesheets/milligram.min.css
 public/stylesheets/normalize.css
+public/javascripts/app.bundle.js
