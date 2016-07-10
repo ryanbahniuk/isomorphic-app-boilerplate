@@ -7,6 +7,7 @@ const source = require('vinyl-source-stream');
 const uglify = require('gulp-uglify');
 const buffer = require('vinyl-buffer');
 
+const jsSrcPath = path.join('.', 'client');
 const assetsPath = path.join('.', 'public');
 const cssPath = path.join(assetsPath, 'stylesheets');
 const jsPath = path.join(assetsPath, 'javascripts');
