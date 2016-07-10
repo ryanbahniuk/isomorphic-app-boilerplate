@@ -6,6 +6,6 @@ import router from '../router';
 
 render(
   router,
-  document.getElementById('app')
+  document
 );
 
