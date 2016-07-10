@@ -1,7 +1,6 @@
 {
-  "name": "sample-bt-app",
-  "version": "0.0.0",
-  "private": true,
+  "name": "isomorphic-app-boilerplate",
+  "version": "0.0.1",
   "scripts": {
     "start": "./node_modules/.bin/babel-node ./bin/www"
   },
