@@ -1,6 +1,3 @@
 npm-debug.log
 node_modules/
-public/stylesheets/milligram.min.css
-public/stylesheets/milligram.min.css.map
-public/stylesheets/normalize.css
-public/javascripts/app.bundle.js
+dist/

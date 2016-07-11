@@ -4,8 +4,8 @@
  * Module dependencies.
  */
 
-var app = require('../app');
-var debug = require('debug')('sample-bt-app:server');
+var app = require('../dist/app');
+var debug = require('debug')('isomorphic-app-boilerplate:server');
 var http = require('http');
 
 /**
